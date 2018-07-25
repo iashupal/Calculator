@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" 
+    integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="scientific-calc.html">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/images/maths.ttf">
+    
+</head>
+<body>
+    <div class="calc">
+        <!-- side nav -->
+     
+        <div class="calc-inner">
+            <div class="calc-inner-div" name="Calculator">
+
+                 
+
+                <div class="calc-name">
+                        <!-- <div id="mySidenav" class="sidenav">
+                                <a href="javascript:void(0)" class="closebtn" onclick="close()">&times;</a>
+                                <a href="#">About</a>
+                                <a href="#">Services</a>
+                                <a href="#">Clients</a>
+                                <a href="#">Contact</a>
+                        </div> -->
+                        <!-- <span style="font-size:30px;cursor:pointer" onclick="show()">&#9776;</span> -->
+
+                        <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+                                <button onclick="close()" class="w3-bar-item w3-large">Close &times;</button>
+                                <a href="#" class="w3-bar-item w3-button">Link 1</a>
+                                <a href="#" class="w3-bar-item w3-button">Link 2</a>
+                                <a href="#" class="w3-bar-item w3-button">Link 3</a>
+                        </div>
+                    <i class="fas fa-bars" onclick="show()"></i>
+                    <h1>Standard</h1>
+                </div>
+                <!-- <div class="calc-display" id="display-value" name="display">0</div> -->
+               <input type="text" class="calc-display" id="display-value" name="display" placeholder="0" readonly />
+                <div class="calc-keypad">
+                    <div class="input-keys">
+                        <div class="memory-keys">
+                            <button class="key-MC" onclick="MC()">MC</button>
+                            <button class="key-MR" onclick="MR()">MR</button>
+                            <button class="key-M+" onclick="m-plus()">M+</button>
+                            <button class="key-M-" onclick="m-minus()">M-</button>
+                            <button class="key-MS" onclick="MS()">MS</button>
+                            <button class="key-M" onclick="M()">M</button>
+                        </div>
+                        <div class="maths-keys">
+                            <button class="key-%" onclick="percent()">%</button>
+                            <button class="key-sqrt" onclick="sqrt()">&radic;
+                            <!-- <img src="assets/images/square-root.png" alt=""> -->
+
+                            </button>
+                            <button class="key-square" onclick="square()">x<sup>2</sup></button>
+                            <button class="key-half" onclick="half()">1/x</button>
+                        </div>
+                          <div class="calc-num-upper clearfix">
+                            <div class="digit-keys left">
+                                <button class="key-CE" onclick="CE()">CE</button>
+                                <button class="key-C" onclick="clear()">C</button>
+                                <button class="key-cut" onclick="backspace()">&xotime;</button>
+                                <button class="key-7" value="7" onclick="getNumber(7)">7</button>
+                                <button class="key-8" value="8" onclick="getNumber(8)">8</button>
+                                <button class="key-9" value="9" onclick="getNumber(9)">9</button>
+                                <button class="key-4" value="4" onclick="getNumber(4)">4</button>
+                                <button class="key-5" value="5" onclick="getNumber(5)">5</button>
+                                <button class="key-6" value="6" onclick="getNumber(6)">6</button>
+                                <button class="key-1" value="1" onclick="getNumber(1)">1</button>
+                               
+                                <button class="key-2" value="2" onclick="getNumber(2)">2</button>
+                                <button class="key-3" value="3" onclick="getNumber(3)">3</button>
+                                <button class="key-plusmn" onclick="plusmn('+/-')">&plusmn;</button>
+                                <button class="key-0" value="0" onclick="getNumber(0)">0</button>
+                                <button class="key-dot" value="." onclick="dot()">.</button>
+                            </div>
+                            <div class="operator-keys right">
+                                <button class="key-divide" onclick="getOperand('/')">/</button>
+                                <button class="key-multiply" onclick="getOperand('*')">X</button>
+                                <button class="key-subt" onclick="getOperand('-')">-</button>
+                                <button class="key-add" onclick="getOperand('+')">+</button>
+                                <button class="key-equal" onclick="equal()">=</button>
+                            </div>
+                          </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<script src="assets/js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>

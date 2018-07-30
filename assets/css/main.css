@@ -37,7 +37,7 @@
 }
 
 .calc-display{
-    width: 94%;
+    width: 100%;
     border: 1px solid;
     padding: 10px;
     margin: 0 auto;
@@ -46,7 +46,7 @@
 }
 .calc-keypad, .input-keys{
     width: 100%;
-    margin: 0 auto;
+    margin-left: 3px;
 }
 
 .memory-keys button{
@@ -64,7 +64,9 @@
     margin-bottom: 10px;
 
 }
-
+.scientific-maths-keys button{
+    width: 60px;
+}
 .calc-num-upper{
     width: 100%;
 }
@@ -72,7 +74,9 @@
     width: 74%;
     display: inline-block;
 }
-
+.scientific-digit-keys{
+    width: 76%;
+}
 .operator-keys{
    
     width: 18%;
@@ -87,6 +91,18 @@
     margin-right: 5px;
     margin-left: 5px;
     margin-bottom: 10px;
+}
+
+.operator-keys button{
+    margin-left: 0;
+}
+
+
+.scientific-digit-keys button, .scientific-operator-keys button{
+    width: 63px;
+    margin-right: 0;
+    margin-left: 5px;
+   
 }
 
 
